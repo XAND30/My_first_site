@@ -3,82 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For athena</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #000;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        h1, h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 2.5em;
-            color: #d4af37;
-        }
-
-        h2 {
-            margin-top: 60px;
-            font-size: 2em;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
-        }
-
-        .filme {
-            position: relative;
-            overflow: hidden;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .filme:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
-        }
-
-        .filme img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .filme a {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-
-        .titulo {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
-            padding: 20px 10px 10px;
-            font-weight: bold;
-            font-size: 0.9em;
-            text-align: center;
-        }
-    </style>
+    <title>Frankstein</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -97,7 +23,7 @@
             <!-- Filme 2 -->
             <div class="filme">
                 <a href="https://pluto.tv/br/on-demand/series/60c8f203e301960013db434a/season/1?lang=pt" target="_blank">
-                    <img src="https://images.pluto.tv/series/60c8f203e301960013db434a/tile_1769717179082.jpg?fill=blur&fit=fill&fm=jpg&auto=&ixlib=react-9.1.5&q=75&w=200&h=200&dpr=1"
+                    <img src="https://imgs.search.brave.com/24ykWsbRL-jB30NhsxEsw62TUMtDqxm7xLkKpbAjj6Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9mL2ZmL1Nv/dXRoX3Bhcmtfc2ln/bi5zdmcvMjUwcHgt/U291dGhfcGFya19z/aWduLnN2Zy5wbmc"
                      alt="South Park(nao e filme mais acho bom)">
                     <div class="titulo">South Park</div>
                 </a>
@@ -138,6 +64,10 @@
         </div>
     </div>
 
+    <div class="sorteio-container">
+    <button id="btn-sortear">Sortear um Filme</button>
+    </div>
+
         <h1>Sites</h1>
         
         <div class="grid">
@@ -168,7 +98,7 @@
                 </a>
             </div>
 
-            <!-- site 4 -->
+            <!-- site 4-->
             <div class="filme">
                 <a href="https://www.pobreflixtv.hair/" target="_blank">
                     <img src="https://imgs.search.brave.com/BifoWIJgbWBCUxlSR4opQGhi4rkY6RJ7LRkQPf1v41w/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Z0Y2RuLm5l/dC9pbWFnZXMvdF9h/cHAtY292ZXItcyxm/X2F1dG8vcC9iY2Y1/MmZmNy0yZWQzLTRi/YTQtOGQ5YS1mNGNl/NzYzYzY3MzgvMTI5/MDM5OTYyNi9wb2Jy/ZWZsaXgtZnVsbC1o/ZC1tb3ZpZXMtc2Ny/ZWVuc2hvdA"
@@ -198,5 +128,8 @@
 
         <h2>fim do site</h2>
     <h3>Criadores:XAND30 e XD30sky</h3>
+
+    <script src="script.js"></script>
+    
 </body>
 </html>
