@@ -78,7 +78,7 @@ h2 {
     margin-bottom: 40px;
 }
 
-/* Deixa o botão branco */
+/* Deixa o botão dourado e bonito */
 #btn-sortear {
     background-color: #ffffff;
     color: #000;
@@ -92,7 +92,7 @@ h2 {
     box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
 }
 
-/* botao de filme random animacao*/
+/* Efeito ao passar o mouse */
 #btn-sortear:hover {
     background-color: #b5952f;
     transform: scale(1.05);
