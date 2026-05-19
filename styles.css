@@ -89,11 +89,11 @@ h2 {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
 }
 
 /* Efeito ao passar o mouse */
 #btn-sortear:hover {
-    background-color: #b5952f;
+    background-color: #ffffff;
     transform: scale(1.05);
 }
