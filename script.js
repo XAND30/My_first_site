@@ -1,5 +1,5 @@
 document.getElementById('btn-sortear').addEventListener('click', function() {
-    const filmes = document.querySelectorAll('.filme');
+    const filmes = document.querySelectorAll('.sorteio');
     
     if (filmes.length === 0) {
         alert('Nenhum filme encontrado na página!');
