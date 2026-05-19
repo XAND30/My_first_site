@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.container {/*centraliza os conteudos na tela */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #d4af37;
+}
+
+h2 {
+    margin-top: 60px;
+    font-size: 2em;
+}
+
+.grid {/*deixa o layout em grade e adapta as colunas*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.filme {/*estiliza os quadrados dos filmes*/
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filme:hover {/*aplica o efeito de sombra e de zoom ao passar o mouse*/
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+.filme img {/*forca a imagem a ficar no tamanho dos quadrados dos filmes*/
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.filme a {/*estiliza o link dos filmes*/
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.titulo {/*deixa o nome dos filmes no meio do quadrado do filme*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    padding: 20px 10px 10px;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* Centraliza o botão na tela */
+.sorteio-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Deixa o botão branco */
+#btn-sortear {
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+}
+
+/* botao de filme random animacao*/
+#btn-sortear:hover {
+    background-color: #b5952f;
+    transform: scale(1.05);
+}
