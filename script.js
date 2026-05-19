@@ -29,6 +29,6 @@ document.getElementById('btn-sortear').addEventListener('click', function() {
     const tituloVencedor = filmeVencedor.querySelector('.titulo').innerText;
     
     setTimeout(() => {
-        alert(`🍿 O filme escolhido para hoje é: ${tituloVencedor}!`);
+        alert(`O filme escolhido foi: ${tituloVencedor}!`);
     }, 500);
 });
